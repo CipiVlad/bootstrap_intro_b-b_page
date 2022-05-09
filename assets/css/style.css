@@ -1,0 +1,84 @@
+/* =================================== */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* html {
+  font-size: 100%;
+} */
+body {
+  margin: 0; // 1
+  font-family: var(--#{$variable-prefix}body-font-family);
+  @include font-size(var(--#{$variable-prefix}body-font-size));
+  font-weight: var(--#{$variable-prefix}body-font-weight);
+  line-height: var(--#{$variable-prefix}body-line-height);
+  color: var(--#{$variable-prefix}body-color);
+  text-align: var(--#{$variable-prefix}body-text-align);
+  background-color: var(--#{$variable-prefix}body-bg); // 2
+  -webkit-text-size-adjust: 100%; // 3
+  -webkit-tap-highlight-color: rgba($black, 0); // 4
+}
+
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+
+h1,
+h2 {
+  text-align: center;
+  color: rgb(77, 72, 68) !important;
+  font-size: 3rem;
+
+}
+
+.section-headline-padding {
+  text-align: center;
+  padding: 20vh;
+}
+
+.form {
+  color: white;
+}
+
+section {
+  margin: 5vh;
+}
+
+.background-img {
+  background-image: url('https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.headline-form {
+  padding-top: 15vh;
+}
+
+
+
+
+
+/* =================================== */
+/* 
+(Oder statt left und right = 0
+Mit with:100%) */
+/* Sticky Navbar */
+/* ======================
+    article - grid areas
+========================*/
+/* ======================
+section - flex in grid
+========================*/
+/* offset-x | offset-y | blur-radius | color */
+
+/*# sourceMappingURL=style.css.map */

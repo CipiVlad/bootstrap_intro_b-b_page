@@ -1,0 +1,307 @@
+// anlegen von mixin in ausgelagerter Datei #
+// mixing                                   #
+// ##########################################
+
+// #####################################
+
+
+// ----------------NAVBAR--------------
+
+// @mixin classic-navbar {
+
+
+//     header {
+//         display: flex;
+//         justify-content: space-between;
+//         margin: 0 5vw;
+//         padding: 1vh;
+//         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//         background-color: rgb(33, 163, 238);
+
+//         p {
+//             display: inline-block;
+//         }
+
+//         nav ul li {
+//             display: inline-block;
+//         }
+
+//         nav ul li a {
+//             text-decoration: none;
+//             color: black;
+//             padding: 15px;
+//         }
+
+
+//     }
+// }
+
+// #####################################
+
+
+// @mixin sticky-navbar {
+//     header {
+//         display: flex;
+//         justify-content: space-between;
+//         margin: 0 5vw;
+//         padding: 1vh;
+//         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//         background-color: rgb(33, 163, 238);
+//         position: sticky;
+//         top: 0;
+//     }
+
+//     p {
+//         display: inline-block;
+//     }
+
+//     nav ul li {
+//         display: inline-block;
+//     }
+
+//     nav ul li a {
+//         text-decoration: none;
+//         color: black;
+//         padding: 15px;
+//     }
+
+//     section {
+//         background: yellow;
+//         height: 200vh;
+//     }
+// }
+
+// #####################################
+
+// @mixin nav-fix {
+
+//     nav {
+//         Position: fixed;
+//         Left: 0;
+//         Right: 0;
+//     }
+// }
+
+
+/* 
+(Oder statt left und right = 0
+Mit with:100%) */
+
+
+/* Sticky Navbar */
+// @mixin nav-sticky {
+//     nav {
+//         Position: sticky;
+//         Top: 0;
+//     }
+// }
+
+// #####################################
+
+
+// ----------------TEXT-STYLE---------------
+
+// ##########################################
+// parameter template
+
+// @mixin styletext($fs, $fw, $co, $td, $tt, $bg) {
+// font-size: $fs;
+// font-weight: $fw;
+// color: $co;
+// text-decoration: $td;
+// text-transform: $tt;
+// background-color: $bg;
+// }
+// // ##########################################
+
+// ----------------BACKGROUND---------------
+
+
+// ##########################################
+// background-shorthand: color url('')  attachment position / size repeat;
+
+// @mixin background {
+//     background: black url('https://picsum.photos/200') center / cover no-repeat;
+//     padding: 100%;
+// }
+// ##########################################
+
+
+// ##########################################
+// @mixin bg-blend-mode {
+//     div {
+//         background: url('https://images.unsplash.com/photo-1506495262506-8c4ef383d872?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') center /cover no-repeat;
+//         background-color: $bg;
+//         padding: 50%;
+//         background-blend-mode: multiply;
+//     }
+// }
+// ##########################################
+
+
+// // ---------FLEXBOX-----------------------
+
+
+// ##########################################
+
+// @mixin flex-center-box{                
+//     display: flex;                       
+//     justify-content: space-between;       
+//     align-items: center;}
+
+
+// ##########################################
+
+
+// // ---------GRID-----------------------
+
+// ##########################################
+
+// @mixin grid-template-columns{                
+
+// .grid{
+//     display:grid;
+//     grid-template-columns: repeat(auto-fit, minmax(3px,1fr)) ;
+// }
+
+// .column-grid-child{
+//     width:100px;
+//     height:100px;
+//     background: firebrick;
+// }
+
+
+
+/* ======================
+    article - grid areas
+========================*/
+
+// @mixin grid-parent {
+
+//     article {
+//         display: grid;
+//         grid-template-columns: 2fr 4fr 4fr 2fr;
+//         grid-template-rows: repeat(4, 50px);
+//         gap: 20px;
+//         grid-template-areas:
+//             "A B B C"
+//             "A . E C"
+//             "F G E C"
+//             "F G none H"
+//         ;
+//     }
+// }
+
+// @mixin grid-children {}
+
+// .container1 {
+//     background-color: green;
+//     grid-area: A;
+// }
+
+// .container2 {
+//     background-color: blue;
+//     grid-area: B;
+// }
+
+// .container3 {
+//     background-color: yellow;
+//     grid-area: C;
+// }
+
+// .container4 {
+//     background-color: crimson;
+//     grid-area: D;
+// }
+
+// .container5 {
+//     background-color: crimson;
+//     grid-area: E;
+// }
+
+// .container6 {
+//     background-color: crimson;
+//     grid-area: F;
+// }
+
+// .container7 {
+//     background-color: crimson;
+//     grid-area: G;
+// }
+
+// .container8 {
+//     background-color: crimson;
+//     grid-area: H;
+// }
+
+
+
+// ##########################################
+
+
+
+/* ======================
+section - flex in grid
+========================*/
+// @mixin flex-grid-parent {
+//     section {
+//         display: grid;
+//         grid-template-columns: 40% 40%;
+//         grid-template-rows: 30vh 30vh;
+//         gap: 10px;
+//     }
+// }
+
+// @mixin flex-grid-child{
+
+// .containerBox1 {
+//     background-color: tomato;
+//     grid-column: 1 / 2;
+//     grid-row: 1 / 2;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+
+// .containerBox2 {
+//     background-color: tomato;
+//     grid-column: 2 / 3;
+//     grid-row: 1 / 2;
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: flex-end;
+// }
+
+// .containerBox3 {
+//     background-color: tomato;
+//     grid-column: 1 / 3;
+//     grid-row: 2 / 3;
+//     display: grid;
+//     /* align-items: center;
+//     justify-items: center; */
+//     /* 1te Wert align-items / 2te Wert justify-items */
+//     place-items: start center;
+// }
+
+// }
+
+// ############### A-TAG ALS BUTTON ## UND HOVER #########################
+
+// @mixin button {
+
+//     a {
+//         text-decoration: none;
+//         color: black;
+//         font-weight: $fw-thin;
+//         border: $bo;
+//         padding: 20px 45px;
+//         transition-duration: 1s;
+//     }
+
+//     a:hover {
+//         color: black;
+//         background-color: rgb(234, 226, 226);
+//         border-color: rgb(234, 226, 226);
+//     }
+// }

@@ -1,0 +1,41 @@
+// parameter-template allgemeine Variablen für mixin
+// *************************************************
+
+//-- colors ----------------
+$primary-color: rgb(47, 66, 238);
+$secondary-color: rgb(62, 193, 23);
+
+
+// -- text -align 
+$ta: center;
+//     text-transform: $tt;
+$tt: uppercase;
+//     text-decoration: $td;
+$td: none;
+
+//-- fonts ----------------
+$f-large: 3rem;
+$f-med: 2rem;
+$f-small: 1rem;
+// $font-h1;
+// $font-h2;
+// $font-p;
+// $font-a;
+$fw-thin: 100;
+$fw-med: 300;
+$fw-thick: 600;
+$lh: 1.5;
+// main-color-font
+$co: rgb(103, 88, 88);
+
+// --border--------------
+$bo: 1px solid black;
+
+// --box-shadow------
+/* offset-x | offset-y | blur-radius | color */
+// box-shadow: 10px 5px 5px black;--------
+
+$bs: 10px 5px 5px black;
+
+// background-color: $bg;
+$bg: rgb(90, 78, 78);
